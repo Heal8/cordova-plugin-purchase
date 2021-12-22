@@ -95,6 +95,7 @@ SOFTWARE.
     </platform>    
 
     <!-- android -->
+<!--
     <platform name="android">
         <preference name="BILLING_KEY" />
 
@@ -103,7 +104,6 @@ SOFTWARE.
         </js-module>
 
         <config-file target="AndroidManifest.xml" parent="/*">
-            <!-- In-App Billing Permission -->
             <uses-permission android:name="com.android.vending.BILLING" />
         </config-file>
 
@@ -112,7 +112,6 @@ SOFTWARE.
             <string name="billing_key_param">$BILLING_KEY</string>
         </config-file>
 
-        <!-- Cordova >= 3.0.0 -->
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="InAppBillingPlugin">
 				<param
@@ -122,10 +121,8 @@ SOFTWARE.
 			</feature>
         </config-file>
 
-        <!-- In-app Billing Library -->
         <source-file src="src/android/com/android/vending/billing/IInAppBillingService.aidl" target-dir="src/com/android/vending/billing" />
 
-        <!-- cordova plugin src files -->
         <source-file src="src/android/com/smartmobilesoftware/inappbilling/InAppBillingPlugin.java" target-dir="src/com/smartmobilesoftware/inappbilling" />
 		<source-file src="src/android/com/smartmobilesoftware/util/Base64.java" target-dir="src/com/smartmobilesoftware/util" />
 		<source-file src="src/android/com/smartmobilesoftware/util/Base64DecoderException.java" target-dir="src/com/smartmobilesoftware/util" />
@@ -137,6 +134,7 @@ SOFTWARE.
 		<source-file src="src/android/com/smartmobilesoftware/util/Security.java" target-dir="src/com/smartmobilesoftware/util" />
 		<source-file src="src/android/com/smartmobilesoftware/util/SkuDetails.java" target-dir="src/com/smartmobilesoftware/util" />
     </platform>
+-->
     
     <!-- windows -->
 	<platform name="windows">
